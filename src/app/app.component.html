@@ -1,3 +1,16 @@
 <h1>
   {{title}}
 </h1>
+
+<form>
+  <div class="field">
+    <label for="teams">Teams:</label>
+    <textarea rows="10" name="teams" #teams>
+    </textarea>
+  </div>
+  <button (click) = "generateFixture(teams)">Generate Fixture!</button>
+</form>
+
+{{fixture}}
+
+
